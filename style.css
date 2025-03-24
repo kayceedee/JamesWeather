@@ -1,1 +1,178 @@
+.font {
+  font-family: monospace;
+}
 
+img {
+  border: 2px solid black !important;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  font-size: calc(1.25vw + 1.25vh);
+}
+
+.corner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.height {
+  display: inline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.time {
+  margin: auto;
+  flex: 1;
+  font-size: 30px;
+}
+
+.textFlex {
+  font-size: calc(1vw + 2.25vh);
+}
+
+.img {
+  flex: 3;
+  margin-left: 1.5%;
+}
+
+#day {
+  display: flex;
+  flex-direction: column;
+}
+
+.dayOfWeek {
+  flex: 1;
+  order: 1;
+  margin: auto;
+}
+
+.highLow {
+  flex: 1;
+  order: 3;
+  margin: auto;
+}
+
+.shorter {
+  width: 20vw;
+}
+
+.forecast {
+  margin: auto;
+  height: 65%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecastImg {
+  border: black solid 1px;
+  height: 8vw;
+  width: 8vw;
+  flex: 10;
+  order: 2;
+  margin: auto;
+}
+
+.longer {
+  width: 25vw;
+}
+
+.head {
+  flex: 1;
+  width: 100vw;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  flex: 2;
+  border-top: black solid 9px;
+  width: 100vw;
+}
+
+.bottom {
+  display: flex;
+  flex: 2;
+  border-top: black solid 7px;
+  border-bottom: black solid 5px;
+  width: 100vw;
+}
+
+.vLine {
+  width: 3px;
+  height: 40vh;
+  position: fixed;
+  margin-right: -80vw;
+  background-color: black;
+}
+
+.currentWeatherTop, .currentWeatherBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topWeather {
+  position: relative;
+}
+
+.topWeather, .bottomWeather {
+  flex: 2.5;
+  border-right: black solid 4px;
+}
+
+.blue1 {
+  background-color: #0077b6;
+}
+
+.blue2 {
+  background-color: #669bbc;
+}
+
+.blue3 {
+  background-color: #90e0ef;
+}
+
+.toMetric {
+  position: absolute;
+  right: 20px;
+  bottom: 2px;
+  font-size: 25px;
+}
+
+#metric {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}
+
+.currentWeatherLine {
+  border-bottom: black solid 3px;
+}
+
+.headerCurrentWeatherTop {
+  right: 10px;
+  font-size: 1.1em;
+}

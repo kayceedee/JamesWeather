@@ -1,1 +1,111 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en" class="font">
+    <body class="flexbox column notScroll">
+    <div class="flexbox head blue1">
+      <div class="img">
+        <img src="file:///C:/Users/super/Documents/JamesWeather/Images/broken clouds.png" height="100" width="100"/>
+      </div>
+      <div class="time">
+        <p id="time"></p>
+        <form class="toMetric" method="post">
+          <label class="toMetric">Metric: </label>
+          <input type="checkbox" id="metric">
+        </form>
+      </div>
+    </div>
+
+    <div class="top">
+      <div class="topWeather blue2">
+        <h1 class="height pFlex">Search</h1>
+        <div class="forecast">
+          <div class="day1" id='day'>
+            <img id="topForecast1" class="forecastImg" src="">
+            <p id="topDayOfWeek1" class="dayOfWeek"></p>
+            <p id="topHighLow1" class="highLow"></p>
+          </div>
+          <div class="day2" id='day'>
+            <img id="topForecast2" class="forecastImg" src="">
+            <p id="topDayOfWeek2" class="dayOfWeek"></p>
+            <p id="topHighLow2" class="highLow"></p>
+          </div>
+          <div class="day3" id='day'>
+            <img id="topForecast3" class="forecastImg" src="">
+            <p id="topDayOfWeek3" class="dayOfWeek"></p>
+            <p id="topHighLow3" class="highLow"></p>
+          </div>
+          <div class="day4" id='day'>
+            <img id="topForecast4" class="forecastImg" src="">
+            <p id="topDayOfWeek4" class="dayOfWeek"></p>
+            <p id="topHighLow4" class="highLow"></p>
+          </div>
+          <div class="day5" id='day'>
+            <img id="topForecast5" class="forecastImg" src="">
+            <p id="topDayOfWeek5" class="dayOfWeek"></p>
+            <p id="topHighLow5" class="highLow"></p>
+          </div>
+        </div>
+        <form method="post" class="corner">
+          <input type="p" name="latLon" class="longer" placeholder="Lat & Lon OR city, state & country.">
+          <button type="submit" name="button" id="button" onclick="search(this.form)">🔍</button>
+        </form>
+      </div>
+      <div class="currentWeatherTop blue3">
+        <div class="currentWeatherLine">
+          <p class="headerCurrentWeatherTop">Current weather<p>
+        </div>
+        <p id="topTemp">Temp:</p><br>
+        <p id="topFeelsLike">Feels like:</p><br>
+        <p id="topSkys">Skys:</p><br>
+        <p id="topWind">Wind:</p><br>
+        <p id="topHumid">Humidity:</p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottomWeather blue2">
+        <h1 class="pFlex height">Your location</h1>
+        <div class="forecast">
+          <div class="day1" id='day'>
+            <img id="bottomForecast1" class="forecastImg" src="">
+            <p id="bottomDayOfWeek1" class="dayOfWeek"></p>
+            <p id="bottomHighLow1" class="highLow"></p>
+          </div>
+          <div class="day2" id='day'>
+            <img id="bottomForecast2" class="forecastImg" src="">
+            <p id="bottomDayOfWeek2" class="dayOfWeek"></p>
+            <p id="bottomHighLow2" class="highLow"></p>
+          </div>
+          <div class="day3" id='day'>
+            <img id="bottomForecast3" class="forecastImg" src="">
+            <p id="bottomDayOfWeek3" class="dayOfWeek"></p>
+            <p id="bottomHighLow3" class="highLow"></p>
+          </div>
+          <div class="day4" id='day'>
+            <img id="bottomForecast4" class="forecastImg" src="">
+            <p id="bottomDayOfWeek4" class="dayOfWeek"></p>
+            <p id="bottomHighLow4" class="highLow"></p>
+          </div>
+          <div class="day5" id='day'>
+            <img id="bottomForecast5" class="forecastImg" src="">
+            <p id="bottomDayOfWeek5" class="dayOfWeek"></p>
+            <p id="bottomHighLow5" class="highLow"></p>
+          </div>
+        </div>
+        <h1 id="currentPlace" class="pFlex height"></h1>
+      </div>
+      <div class="currentWeatherBottom  blue3">
+        <div class="currentWeatherLine">
+          <p class="headerCurrentWeatherTop">Current weather<p>
+        </div>
+        <p id="bottomTemp">Temp: Loading...</p>
+        <p id="bottomFeelsLike">Feels like: Loading..</p>
+        <p id="bottomSkys">Skys: Loading...</p>
+        <p id="bottomWind">Wind: Loading.</p>
+        <p id="bottomHumid">Humidity: Loading...</p>
+      </div>
+    </div>
+
+  </body>
+<link rel="stylesheet" href="JamesWeatherCSS.css">
+<script src="JamesWeatherJavascript.js"></script>
+</html>
